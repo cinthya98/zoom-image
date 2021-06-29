@@ -6,6 +6,23 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+  <script src="http://okfoc.us/okzoom/src/okzoom-1.0.min.js"></script>
+
+  <script>
+      $(document).ready(function(){
+          $('img').okzoom({
+              width: 200,
+              height: 200,
+              scaleWidth: 800,
+              round: true,
+              background: "#fff",
+              // backgroundRepeat: "repeat",
+              shadow: "0 0 5px #000",
+              border: "1px solid black"
+              });
+      })
+  </script>
 </head>
 <body>
   <app-root></app-root>
